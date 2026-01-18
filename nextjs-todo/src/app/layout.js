@@ -1,0 +1,15 @@
+// src/app/layout.js
+import './globals.css';
+
+export const metadata = {
+  title: 'ToDoリスト - Next.js',
+  description: 'Next.jsで作るシンプルなToDoアプリ',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="ja">
+      <body>{children}</body>
+    </html>
+  );
+}
