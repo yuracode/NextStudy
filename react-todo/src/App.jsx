@@ -1,13 +1,13 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
-import TodoInput from './components/TodoInput';
-import TodoItem from './components/TodoItem';
-import Stats from './components/Stats';
+import {TodoInput} from './components/TodoInput';
+import {TodoItem} from './components/TodoItem';
+import {Stats} from './components/Stats';
 import './App.css';
 
 const API_URL = 'http://localhost:3001/api/todos';
 
-function App() {
+export const App = () => {
   const [todos, setTodos] = useState([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(true);
@@ -111,4 +111,3 @@ function App() {
   );
 }
 
-export default App;

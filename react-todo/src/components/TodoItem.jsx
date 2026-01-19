@@ -1,7 +1,6 @@
-// src/components/TodoItem.js
 import React from 'react';
 
-const TodoItem = ({ todo, onToggle, onDelete }) => (
+export const TodoItem = ({ todo, onToggle, onDelete }) => (
   <li className="todo">
     <label className="todo-label">
       <input
@@ -14,5 +13,3 @@ const TodoItem = ({ todo, onToggle, onDelete }) => (
     <button onClick={() => onDelete(todo.id)}>削除</button>
   </li>
 );
-
-export default TodoItem;

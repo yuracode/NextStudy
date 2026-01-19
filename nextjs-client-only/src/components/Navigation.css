@@ -1,0 +1,26 @@
+/* src/components/Navigation.css */
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  border-bottom: 2px solid #eee;
+}
+
+.nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #555;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.nav a.active {
+  background: #3498db;
+  color: white;
+}

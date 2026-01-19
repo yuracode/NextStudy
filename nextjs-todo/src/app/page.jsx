@@ -2,12 +2,12 @@
 'use client'; // クライアントコンポーネント（useState/useEffectを使うため）
 
 import React, { useState, useEffect } from 'react';
-import TodoInput from '@/components/TodoInput';
-import TodoItem from '@/components/TodoItem';
-import Stats from '@/components/Stats';
+import {TodoInput} from '../components/TodoInput.jsx';
+import {TodoItem} from '../components/TodoItem.jsx';
+import {Stats} from '../components/Stats.jsx';
 import './page.css';
 
-function Home() {
+export default function Home() {
   const [todos, setTodos] = useState([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(true);
@@ -110,5 +110,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

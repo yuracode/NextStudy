@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoInput = ({ value, onChange, onSubmit }) => (
+export const TodoInput = ({ value, onChange, onSubmit }) => (
   <div className="row">
     <input
       type="text"
@@ -12,5 +12,3 @@ const TodoInput = ({ value, onChange, onSubmit }) => (
     <button onClick={onSubmit}>追加</button>
   </div>
 );
-
-export default TodoInput;
