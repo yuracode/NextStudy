@@ -1,7 +1,7 @@
 // src/app/page.js
 'use client';
 
-import Link from 'next/link';
+import Link from 'next/link.js';
 import {Navigation} from '../components/Navigation.jsx';
 import './page.css';
 
